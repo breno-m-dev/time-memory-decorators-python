@@ -1,10 +1,11 @@
 import time
-
+from functools import wraps
 def timer(func):
     """
     this function is supposed to be used as a decorator. It makes every
     function to show how much time it took to be executed.
     """
+    @wraps(func)
     def wrapper():
         start = time.time()
         result = func()

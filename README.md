@@ -42,10 +42,11 @@ execution.
 python test.py      
 Current memory: 3.12 KB
 Peak memory: 1964780.38 KB
-wrapper took 42.94 seconds to be executed
+big_list took 42.94 seconds to be executed
 
 ## Technologies
 
 - Python
 - time
 - tracemalloc
+- functools wraps

@@ -1,8 +1,12 @@
+from functools import wraps
+
+
 def log_function(func):
     """
     this function is supposed to be used as a decorator. It prints a
     message before executing a function.
     """
+    @wraps(func)
     def log_print(*args, **kwargs):
         print(f"Executing {func.__name__}")
         return func(*args, **kwargs)

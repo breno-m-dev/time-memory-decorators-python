@@ -1,5 +1,5 @@
 import tracemalloc
-
+from functools import wraps
 
 def measure_memory(func):
     """
@@ -8,6 +8,7 @@ def measure_memory(func):
     and the final usage after execution.
     Args: func: function that will be tested
     """
+    @wraps(func)
     def wrapper(*args, **kwargs):
         tracemalloc.start()
 
