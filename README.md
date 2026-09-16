@@ -44,6 +44,18 @@ Current memory: 3.12 KB
 Peak memory: 1964780.38 KB
 big_list took 42.94 seconds to be executed
 
+## Recomendation
+It is recommended to add in your IDE the path to the project so it recognizes
+the library. In VScode for example you have to add the following code to the
+settings.json file of your vscode:
+
+```json
+    "python.analysis.extraPaths":[
+        "D:/REPLACE_WITH_PATH.../time-memory-decorators-python"
+    ],
+
+```
+
 ## Technologies
 
 - Python
