@@ -2,6 +2,12 @@ import tracemalloc
 
 
 def measure_memory(func):
+    """
+    This decorator starts measuring the memory usage of a method at the
+    beggining of the execution of the method. And prints the peak memory usage
+    and the final usage after execution.
+    Args: func: function that will be tested
+    """
     def wrapper(*args, **kwargs):
         tracemalloc.start()
 
